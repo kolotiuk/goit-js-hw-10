@@ -23,6 +23,7 @@ const onInputSearch = e => {
       } else if (res.length < 2) {
         renderOneCountry(res);
       } else {
+        listRef.innerHTML = '';
         onInputManyFound();
       }
     })
